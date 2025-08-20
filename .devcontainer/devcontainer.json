@@ -1,0 +1,8 @@
+{
+    "name": "Default Linux Universal",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [3000, 8000, 27017],
+    "postCreateCommand": "npx create-next-app frontend && django-admin startproject backend"
+}
